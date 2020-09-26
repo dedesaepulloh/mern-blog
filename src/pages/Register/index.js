@@ -1,10 +1,27 @@
-import React from 'react'
+import React from 'react';
+import './register.scss'
+import { RegisterBg } from '../../assets';
+import { Input, Button, Gap, Link } from '../../components/atoms';
 
 const Register = () => {
     return (
-        <div>
-            <h1>Register Page</h1>
-        </div>
+        <div className="main-page">
+            <div className="left">
+                <img src={RegisterBg} className="bg-image" alt="imageBg" />
+            </div>
+            <div className="right">
+                <p className="title">Register</p>
+                <Input label="Full Name" placeholder="Full Name" />
+                <Gap height={15} />
+                <Input label="Email" placeholder="Email" />
+                <Gap height={15} />
+                <Input label="Password" placeholder="Password" />
+                <Gap height={30} />
+                <Button title="Register" />
+                <Gap height={100} />
+                <Link title="Kembali ke Login" />
+            </div>
+        </div>  
     )
 }
 
