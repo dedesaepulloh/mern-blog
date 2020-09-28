@@ -4,13 +4,12 @@ import CreateBlog from '../CreateBlog';
 import DetailBlog from '../DetailBlog';
 import Home from '../Home';
 import { Header, Footer } from '../../components';
+import './mainApp.scss';
 
 const MainApp = () => {
     return (
         <div className="main-app-wrapper">
-            <div className="header-wrapper">
-                <Header />
-            </div>
+            <Header />
 
             <div className="content-wrapper">
                 <Router>
@@ -28,9 +27,8 @@ const MainApp = () => {
                 </Router>
             </div>
 
-            <div className="footer-wrapper">
-                <Footer />
-            </div>      
+            <Footer />  
+            
         </div>
     )
 }
